@@ -31,7 +31,7 @@ Installation
 * [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load folders plugins.
 
 
-NOTE: **The master branch is the only officially supported branch.**
+NOTE: **The master branch and api-4 branch is the officially supported.**
 _All other branches are in testing and may be unstable. Do not use builds from other branches unless you are sure you understand the risks._
 
 License
