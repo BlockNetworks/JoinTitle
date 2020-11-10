@@ -14,7 +14,7 @@
 
 namespace MilkAndCookiz\JoinTitle;
 
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
