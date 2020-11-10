@@ -24,17 +24,20 @@ use MilkAndCookiz\JoinTitle\Main;
 
 class SendTask extends Task implements Listener {
 
-	public function __construct(Main $main, Player $player) {
-		$this->main = $main;
+	private $plugin;
+	private $player;
+
+	public function __construct(Main $plugin, Player $player) {
+		$this->plugin = $plugin;
 		$this->player = $player;
 	}
 
 	public function onRun($currentTick) {
 		$this->player->addTitle(
-			$this->main->getConfig()->get("main_title"),
-			$this->main->getConfig()->get("down_title"),
+			$this->plugin->getConfig()->get("main_title"),
+			$this->plugin->getConfig()->get("down_title"),
 			20,
-			$this->main->getConfig()->get("time_title"),
+			$this->plugin->getConfig()->get("time_title"),
 			40
 		);
 	}
