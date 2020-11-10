@@ -24,8 +24,11 @@ use MilkAndCookiz\JoinTitle\Main;
 
 class SendTask extends Task implements Listener {
 
+	private $plugin;
+	private $player;
+
 	public function __construct(Main $plugin, Player $player) {
-		$this->main = $plugin;
+		$this->plugin = $plugin;
 		$this->player = $player;
 	}
 
