@@ -14,32 +14,35 @@
 
 namespace MilkAndCookiz\JoinTitle;
 
-use pocketmine\{Player, Server};
+use pocketmine\Player;
+use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\utils\{Config, TextFormat as TF};
+use pocketmine\utils\Config;
+use pocketmine\utils\TextFormat;
 
 use MilkAndCookiz\JoinTitle\SendTask;
 
 //Coded and created by CookieCode.
 
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener {
 
-private $prefix = "[JoinTitle]";
+	private $prefix = "[JoinTitle]";
 
 	public function onEnable() {
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->getServer()->getLogger()->info(TF::GREEN . $this->prefix . TF::YELLOW . " Plugin enabled by MilkAndCookiz");
+//		$this->getServer()->getLogger()->info(TextFormat::GREEN . $this->prefix . TextFormat::YELLOW . " Plugin enabled by MilkAndCookiz");
 		$this->saveDefaultConfig();
-  }
+	}
 
 	public function onDisable() {
-		$this->getServer()->getLogger()->info(TF::GREEN . $this->prefix . TF::YELLOW . " Plugin disabled by MilkAndCookiz");
+//		$this->getServer()->getLogger()->info(TextFormat::GREEN . $this->prefix . TextFormat::YELLOW . " Plugin disabled by MilkAndCookiz");
 	}
-	
-	public function onJoin(PlayerJoinEvent $event){
+
+	public function onJoin(PlayerJoinEvent $event) {
 		$joinTask = new SendTask($this, $event->getPlayer());
 		$this->getScheduler()->scheduleDelayedTask($joinTask, 20);
 	}
+
 }
