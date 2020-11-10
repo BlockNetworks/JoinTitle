@@ -1,11 +1,38 @@
 JoinTitle
 ===================
 
+
 __A join title plugin for Minecraft: Bedrock Edition v1.5.x!__
 
-Attention
-------------
-This repository is now located at **[BlockNetworks/JoinTitle](https://github.com/BlockNetworks/JoinTitle)**.
+
+Introduction
+-------------
+JoinTitle is a join title plugin, when you join the server, this plugin send you a title and you can configure it into the config.yml! This plugin works with **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)**. The code is written by **MilkAndCookiz**.<br>
+
+
+
+However, JoinTitle still has a long way to go. All contributions are welcome.
+
+Objective
+-------------
+
+* Add an option "first join title"
+
+
+Help & Support
+-------------
+
+
+If you have any issues with JoinTitle, do not be afraid to open the issue.
+
+Installation
+-------------
+* [PocketMine](https://github.com/pmmp/PocketMine-MP/) - JoinTitle work only with **PocketMine-MP**.
+* [DevTools](https://github.com/pmmp/DevTools) - Required to load folder plugins.
+
+
+NOTE: **The master branch and api-4 branch is the officially supported.**
+_All other branches are in testing and may be unstable. Do not use builds from other branches unless you are sure you understand the risks._
 
 License
 -------------
