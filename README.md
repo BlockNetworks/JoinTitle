@@ -27,8 +27,8 @@ If you have any issues with JoinTitle, do not be afraid to open the issue.
 
 Installation
 -------------
-* [PocketMine](https://github.com/pmmp/PocketMine-MP/) - JoinTitle work only with PocketMine software.
-* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load folders plugins.
+* [PocketMine](https://github.com/pmmp/PocketMine-MP/) - JoinTitle work only with **PocketMine-MP**.
+* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Required to load folder plugins.
 
 
 NOTE: **The master branch and api-4 branch is the officially supported.**
