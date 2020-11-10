@@ -15,7 +15,7 @@
 namespace MilkAndCookiz\JoinTitle;
 
 #External
-use pocketmine\player\Player;
+use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\scheduler\Task;
 use pocketmine\event\Listener;
