@@ -2,6 +2,7 @@
 build-by-default: true
 branches:
 - master
+- api-4
 projects:
   JoinTitle:
     path: ""
