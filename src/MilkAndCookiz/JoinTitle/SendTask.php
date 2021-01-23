@@ -32,7 +32,7 @@ class SendTask extends Task implements Listener {
 		$this->player = $player;
 	}
 
-	public function onRun($currentTick) {
+	public function onRun(int $currentTick) {
 		$this->player->addTitle(
 			$this->plugin->getConfig()->get("main_title"),
 			$this->plugin->getConfig()->get("down_title"),
